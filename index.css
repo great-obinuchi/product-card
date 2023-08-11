@@ -1,0 +1,105 @@
+:root{
+    --bgbody: #F3EBE4;
+    --green: #41836d;
+    --white: #FDFFFF;
+}
+ @font-face{
+    font-family: Montserrat;
+    src: url(http://fonts.goggle.com/specimen/Montserrat);
+    
+    font-Family: Fraunces;
+    src: url(https://fonts.google.com/specimen/Fraunces);
+ }
+body{
+    background-color:var(--bgbody);
+    text-align: center;    
+    margin: 0%;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-top: 10vh;
+    height:100vh;
+}
+.perfume{
+    width: 50%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+}
+h2{
+    font-size: xx-large;
+}
+span{
+    letter-spacing: 1mm;
+}
+.info{
+    background-color: white;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.img{
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 50%;
+}
+.img > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.imgMob{
+    display: none;
+}
+.price{
+    display:flex;
+}
+strike{
+    padding-top: 32px;
+    padding-left: 20px;
+}
+.price > h2{
+    color: var(--green);
+}
+button{
+    width: 100%;
+    background-color: var(--green);
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+
+
+/* media Queries */
+
+@media (max-width: 916px) {
+    .perfume{
+        width: auto;
+    }
+    body{
+        padding: 2%;
+    }
+}
+
+@media (max-width: 375px) {
+    .imgMob{
+        display: block;
+    }
+    .imgDe{
+        display: none;
+    }
+    .perfume{
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+    }
+    .img{
+        width: 100%
+    }
+}
